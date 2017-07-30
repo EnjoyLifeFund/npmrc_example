@@ -1,0 +1,12 @@
+echo REF:https://nodesource.com/blog/configuring-your-npmrc-for-an-optimal-node-js-environment/
+npm config set init.author.name "Ralic Lo"
+npm config set init.author.email "ralic.lo.eng@ieee.org"
+npm config set init.author.url "http://www.life-fund.org"
+npm config set init.license "MIT"
+npm config set init.version "0.0.1"
+npm config set loglevel="warn"
+
+mkdir -p ~/.npm
+npm config set prefix "~/.npm"
+npm config --global set prefix "~/.npm"
+export PATH=~/.npm/bin:$PATH
