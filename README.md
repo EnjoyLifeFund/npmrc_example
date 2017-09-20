@@ -29,7 +29,7 @@ function installnpm() {
 	echo "SETTING GLOBAL CONFIG---"
 	## This creates "~/.npm/etc/npmrc"
 	npm config --global set prefix "~/.npm" 
-	echo "export PATH=~/.npm/bin:$PATH" >> ~/.bash_profile
+	echo "export PATH=~/.npm/bin:$PATH" in your bashrc manually
 
 	echo "INSTALLING live-server"
 	## This createes "~/.npm/bin/live-sever" , "~/.npm/lib/node_modules/live-server"
